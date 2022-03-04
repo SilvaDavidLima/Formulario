@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Poppins:ital,wght@0,200;0,400;1,200;1,300;1,400;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    width: 100%;
+    height: 100vh;
+    font-family: poppins,mulish,sans-serif;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(5, 5, 5, 0.6);
+}
+
+.img-wrapper img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+#form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    padding: 40px;
+    width: min-content;
+     align-items: center;
+}
+
+#form h2{
+    text-align: center;
+    font-size: 1.8rem;
+    text-shadow: 5px, 5px, 10px, rgb(10, 10, 10, 0.5);
+    margin-bottom: 15%;
+
+}
+
+.input{
+    min-width: 200px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 5px;
+    margin: 0px 0px 10px -5px;
+}
+
+.input i{
+    font-size: 1.2rem;
+    padding-left: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.input input{
+    border: none;
+    outline: none;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0);
+    font-family: poppins,mulish,sans-serif;
+    transform: translateY(-5%);
+    font-size: 14px;
+}
+
+#top button{
+    display: block;
+    margin: 20px 0 10px 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.068);
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.849);
+    cursor: pointer;
+
+}
+
+#top button:hover{
+    background-color: rgba(0, 0, 0, 0.479);
+    transition: 0.2s;
+    opacity: 0.9;
+}
+
+.cadastrado{
+    margin-left: 25%;
+    margin-bottom: 8px;
+}
+
+.cadastrado a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.849);
+}
+
+.cadastrado a:hover{
+    color: rgba(230, 43, 43, 0.658);
+}
+
+.linha-vertical{
+    border: 1px solid rgba(0, 0, 0, 0.705);
+}
+
+#bottom{
+    display: flex;
+    list-style-type: none;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.midias_sociais{
+    margin: 25px 10px 0 0;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 90px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.midias_sociais a{
+    color:  rgba(0, 0, 0, 0.705);
+}
+
+#facebook:hover{
+    background-color: #1877f2;
+    border: none;
+}
+
+#facebook a:hover{ 
+    color: white;
+}
+
+#instagram:hover{
+    background-image: linear-gradient(45deg, #feda75, #fa7e1e,  #d62976, #962fbf, #4f5bd5);
+    border: none;
+}
+
+#instagram a:hover{
+    color: white;
+}
+
+#twitter:hover{
+    background-color: white;
+    border:none;
+}
+
+#twitter a:hover{
+    color: rgb(29 155 240);
+}
+
+
+
+@media screen and (max-width: 450px){ 
+    #form{
+        max-width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+        padding: 15px;
+        width: min-content;
+         align-items: center;
+    }
+    
+    #form h2{
+        text-align: center;
+        font-size: 1.5rem;
+        text-shadow: 5px, 5px, 10px, rgb(10, 10, 10, 0.5);
+        margin-bottom: 15%;
+    
+    }
+    
+    .input{
+        min-width: 150px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        padding: 9px;
+        margin: 0px 0px 10px -5px;
+    }
+    
+    .input i{
+        font-size: 1.1rem;
+        padding-left: 5px;
+        background-color: rgba(0, 0, 0, 0.8);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .input input{
+        border: none;
+        outline: none;
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0);
+        font-family: poppins,mulish,sans-serif;
+        transform: translateY(-5%);
+        font-size: 12px;
+    }
+    
+    #top button{
+        display: block;
+        margin: 20px 0 15px 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        padding: 10px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.068);
+        font-size: 1rem;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.849);
+        cursor: pointer;
+    
+    }
+    
+    #top button:hover{
+        background-color: rgba(0, 0, 0, 0.479);
+        transition: 0.2s;
+        opacity: 0.9;
+    }
+    
+    .cadastrado{
+        margin-left: 45px;
+        margin-bottom: 15px;
+    }
+    
+    .cadastrado a{
+        text-decoration: none;
+        color: rgba(0, 0, 0, 0.849);
+    }
+    
+    .cadastrado a:hover{
+        color: rgba(230, 43, 43, 0.658);
+    }
+    
+    .linha-vertical{
+        border: 1px solid rgba(0, 0, 0, 0.705);
+    }
+    
+    #bottom{
+        display: flex;
+        width: 100%;
+        list-style-type: none;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .midias_sociais{
+        margin: 25px 10px 0 10px;
+        border: 1px solid black;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    
+    .midias_sociais a{
+        color:  rgba(0, 0, 0, 0.705);
+    }
+    
+    #facebook:hover{
+        background-color: #1877f2;
+        border: none;
+    }
+    
+    #facebook a:hover{ 
+        color: white;
+    }
+    
+    #instagram:hover{
+        background-image: linear-gradient(45deg, #feda75, #fa7e1e,  #d62976, #962fbf, #4f5bd5);
+        border: none;
+    }
+    
+    #instagram a:hover{
+        color: white;
+    }
+    
+    #twitter:hover{
+        background-color: white;
+        border:none;
+    }
+    
+    #twitter a:hover{
+        color: rgb(29 155 240);
+    }
+       
+}
